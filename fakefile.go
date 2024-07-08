@@ -26,3 +26,7 @@ func (f *Fakefile) Reader() *fakefile_reader {
 func (f *Fakefile) Writer() *fakefile_writer {
 	return &fakefile_writer{f: f}
 }
+
+func (f *Fakefile) Bytes() []byte {
+	return f.b
+}

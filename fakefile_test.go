@@ -28,4 +28,6 @@ func TestFakefile(t *testing.T) {
 	w := f.Writer()
 	require.Equal(t, w.f, f)
 	require.Equal(t, int64(0), w.offset)
+
+	require.Equal(t, 2, len(f.Bytes()))
 }
