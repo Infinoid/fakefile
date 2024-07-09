@@ -15,7 +15,9 @@ func NewLen(n int) *Fakefile {
 	return &Fakefile{b: make([]byte, n)}
 }
 
-func NewFrom(b []byte) *Fakefile {
+func NewFrom(in []byte) *Fakefile {
+	b := make([]byte, len(in))
+	copy(b, in)
 	return &Fakefile{b: b}
 }
 
