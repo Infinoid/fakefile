@@ -1,5 +1,8 @@
 # Fakefile
 
+![Build](https://github.com/Infinoid/fakefile/actions/workflows/go.yaml/badge.svg)
+<a href="https://pkg.go.dev/github.com/infinoid/fakefile"><img src="https://pkg.go.dev/badge/github.com/infinoid/fakefile.svg" alt="Docs"></a>
+
 This is a simple in-memory fake file, for testing.  It is like `bytes.Buffer`
 but with a few more features:
 
